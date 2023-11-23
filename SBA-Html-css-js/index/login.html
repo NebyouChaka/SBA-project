@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://hckkiu.github.io/resume-template/color.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9209300180.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-6X3sMz5KOKjsZl6O8M0lMz38uIBuZUK+qQJz8Di4Nqd5P2YUfXcGfFAFhcJ++z2B"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="nav-item mx-2">
+                    <div class="search">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button type="button" class="btn btn-outline-success">Search</button>
+                    </div>
+                </li>
+                <!-- Profile dropdown -->
+                <li class="nav-item dropdown">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profile
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Name</a></li>
+                            <li><a class="dropdown-item" href="#">Email</a></li>
+                            <li><a class="dropdown-item" href="#">Upload</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="Login">
+    <div id="Login-container">
+        <h2>Login</h2>
+        <form class="Reg">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-zA-Z]).{6,}" title="Please enter a valid password with at least 6 characters, including at least one letter and one number" required>
+
+            <button onclick="login()">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Recipe Book</p>
+</footer>
+<script src="../javascript/main.js"></script>
+</body>
+</html>

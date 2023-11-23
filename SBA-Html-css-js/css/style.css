@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/recepie_img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.home-text p{
+    font-size: 40px; 
+    margin: 50px; 
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px; /* Add padding to the right for the gap */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .search {
+    display: flex;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
+}
+main {
+    padding: 20px;
+    margin-top: 20px; /* Add margin to the top of the main content */
+    text-align: center; /* Center the text horizontally */
+}
+
+main h1 {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+.home-text {
+    text-align: center; /* Center text within .home-text */
+}
+
+.image-container {
+    height: 200px; /* Set a fixed height for each image container */
+    overflow: hidden; /* Hide any overflow to ensure consistent size */
+    position: relative;
+    margin-bottom: 20px; /* Adjust the margin as needed between image containers */
+    padding: 100px; /* Adjust the padding inside each image container as needed */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}
+
+/* Center text within each image container */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust the text color as needed */
+    text-align: center;
+    width: 100%;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.home-text {
+    text-align: center;
+}
+
+.home-text img {
+    width: 100%; /* Make the image cover the entire width of the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Add a border for better visibility */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px; /* Reduce the padding */
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+#Contact label,
+#Contact button {
+    display: block;
+    margin: 15px auto; /* Center the labels and buttons horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+#Contact textarea,
+#Contact input {
+    width: 100%; /* Make textareas and inputs full width */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    margin: 5px 0; /* Add margin to textareas and inputs */
+}
+
+#Contact button {
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#Contact {
+    max-width: 600px; /* Set a larger max-width for the form container */
+    margin: 0 auto; /* Center the form container horizontally */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 10px 18px #888888;
+}
+#Login {
+    margin-top: 200px;
+    border-radius: 2px;
+}
+#Login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 2px;
+
+}
+
+#Login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Increased gap for more space */
+}
+
+#Login-container form label,
+#Login-container form input {
+    width: 100%;
+}
+
+#Login-container form input {
+    width: 100%;
+    max-width: 100%; /* Make the input width 100% of the container */
+    height: 30px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#Login-container form button {
+    width: 50%; /* Set a specific width, adjust as needed */
+    max-width: 100%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#Login-container p {
+    margin-top: 15px; /* Add space between paragraph and other elements */
+}
+
+#Register {
+    text-align: center;
+    margin-top: 200px;
+}
+.register1 {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px; /* Center the element horizontally and add margin at the bottom */
+    max-width: 400px;
+}
+
+#Register form {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: white; /* Set background color to white */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+#Register form label {
+    display: block;
+    margin: 10px 0;
+}
+
+#Register form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#Register form button {
+    width: 100%;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space between the button and the paragraphs */
+    margin-left: 0; /* Align the button to the left */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
